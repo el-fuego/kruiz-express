@@ -1,0 +1,1297 @@
+body {
+	margin: 0;
+	padding: 0 0 225px 0;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	background: #309da2;
+	background: linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -o-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -moz-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -ms-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -webkit-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -icab-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -rhtmllinear-gradient(-45deg, #2e4b8b, #31b3a9);
+	position: relative;
+	overflow-y: scroll;
+}
+
+/******************************** header */
+
+.head {
+	height: 50px;
+	background: transparent;
+}
+.header,
+.footer-item,
+.content {
+	width: 1105px;
+	margin: 0 auto;
+}
+.languages {
+	float: right;
+}
+.language {
+	display: block;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-size: 18px;
+	padding: 0 30px 0 30px;
+	float: left;
+	color: #2e498a;
+	font-weight: bold;
+	line-height: 46px;
+	background: #3a8fc8;
+	border-bottom: 4px solid #3a8fc8;
+}
+.active {
+	color: #ffffff;
+	background: #52b1dd;
+	border-bottom: 4px solid #9cd70d;
+}
+
+/****************************** marker */
+
+.marker {
+	width: 275px;
+	height: 315px;
+	background: #3a8fc8;
+	padding:15px 41px 41px;
+	z-index: 5;
+	box-sizing: border-box;
+	position: fixed;
+}
+.marker .title {
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 35px;
+	margin: 10px 0 30px 0;
+	font-family: Arial;
+	text-decoration: none;
+	padding-left: 105px;
+	color: #ffffff;
+	position: relative;
+	display: block;
+}
+.marker .title:before {
+	position: absolute;
+	top: -40px;
+	left: -25px;
+	content: '';
+	width: 110px;
+	height: 110px;
+	background: url(pictures_of_transportation/logo.png)
+}
+.phone {
+	font-size: 30px;
+	line-height: 40px;
+	margin: 0;
+	font-weight: 500;
+}
+.working-hour {
+	font-size: 19px;
+	line-height: 35px;
+	margin: 0 0 0 0;
+	text-transform: uppercase;
+}
+.working-hour span {
+	float: right;
+}
+.working-hours {
+	margin: 15px 0 0 0;
+}
+
+.thin-header .head {
+	background: #3a8fc8;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+}
+.thin-header .marker {
+	width: 1000px;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	position: absolute;
+}
+.thin-header .marker .title {
+	margin: 0;
+	width: 75px;
+	float: left;
+}
+.thin-header .marker .title:before {
+	top: -34px;
+}
+.thin-header .marker .phone {
+	line-height: 70px;
+	margin: 0 0 0 100px;
+	float: left;
+}
+.thin-header .working-hours {
+	margin: 0 0 0 0;
+	float: right;
+}
+.thin-header .languages {
+	display: none;
+}
+
+/**************************** slider */
+
+#slider {
+	overflow: hidden;
+	height: 425px;
+	position: relative;
+}
+#slider #image_container {
+	position: absolute;
+	width: 1000%;
+	margin: 0;
+	padding: 0;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	transition-property: all;
+	transition-duration: 1s;
+}
+#slider img {
+	width: 100%;
+}
+#slider li {
+	display: block;
+	float: left;
+	width: 10%;
+	height: 425px;
+}
+#slider .car1 {
+ 	background: url(pictures_of_transportation/images/vito.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car2 {
+	background: url(pictures_of_transportation/images/vitogreywhite.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car3 {
+ 	background: url(pictures_of_transportation/images/camry.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car4 {
+ 	background: url(pictures_of_transportation/images/sprinterin.jpg) center center;
+	background-size: cover;
+}
+#slider .car5 {
+ 	background: url(pictures_of_transportation/images/vitogrey.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car6 {
+ 	background: url(pictures_of_transportation/images/camryin.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car7 {
+ 	background: url(pictures_of_transportation/images/common.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car8 {
+ 	background: url(pictures_of_transportation/images/s500.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car9 {
+ 	background: url(pictures_of_transportation/images/sprinter.jpg) center center;
+ 	background-size: cover;
+}
+#slider .car10 {
+ 	background: url(pictures_of_transportation/images/touareg.jpg) center center;
+ 	background-size: cover;
+}
+.image1 #image_container{
+	left:0;
+}
+.image2 #image_container{
+	left:-100%;
+}
+.image3 #image_container{
+	left:-200%;
+}
+.image4 #image_container{
+	left:-300%;
+}
+.image5 #image_container{
+	left:-400%;
+}
+.image6 #image_container{
+	left:-500%;
+}
+.image7 #image_container{
+	left:-600%;
+}
+.image8 #image_container{
+	left:-700%;
+}
+.image9 #image_container{
+	left:-800%;
+}
+.image10 #image_container{
+	left:-900%;
+}
+#dots{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 310px;
+	left: 50%;
+	margin-left: -155px;
+	bottom: 40px;
+} 
+#dots li{
+	list-style: none;
+	float: left;
+	margin: 0px 6px;
+	width: 13px;
+	height: 13px;
+	background: #29427C;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#dots li:hover{
+	background: #5DB2D9;
+}
+#fleche_gauche{
+	left: 0;
+	background-image: url('pictures_of_transportation/fleche-gauche.png');
+}
+#fleche_gauche:hover {
+	background-image: url('pictures_of_transportation/fleche-gauche-hover.png');
+}
+#fleche_droite{
+	right: 0;
+	background-image: url('pictures_of_transportation/fleche-droite.png');
+}
+#fleche_droite:hover {
+	background-image: url('pictures_of_transportation/fleche-droite-hover.png');
+}
+.fleche{
+	position: absolute;
+	content: '';
+	width: 64px;
+	height: 64px;
+	top: 50%;
+	margin-top: -32px;
+	cursor: pointer;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.image1 #dots .change-image.image1,
+.image2 #dots .change-image.image2,
+.image3 #dots .change-image.image3,
+.image4 #dots .change-image.image4,
+.image5 #dots .change-image.image5,
+.image6 #dots .change-image.image6,
+.image7 #dots .change-image.image7,
+.image8 #dots .change-image.image8,
+.image9 #dots .change-image.image9,
+.image10 #dots .change-image.image10 {
+	background: #5DB2D9;
+	cursor: default;
+}
+
+.transportation {
+	margin-top: 50px;
+}
+.transportation h1 {
+	text-align: center;
+	margin: 30px 0 0 0;
+	padding: 0;
+	font-size: 50px;
+	line-height: 80px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.transportation .sub-title {
+	line-height: 40px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-weight: normal;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+.content {
+	width: 980px;
+	margin: 50px auto 0 auto;
+}
+
+/********************************* warranties */
+
+.warranties {
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 16px 0;
+}
+.warranties-item {
+    margin: 0 16px;
+    display: inline-block;
+}
+.warranties .warranties-item:first-child .warranty .back .back-item {
+	padding: 16px 1px;
+}
+.warranties-item:hover .warranty, 
+.warranties-item.hover .warranty {
+    transform: rotateY(180deg);
+}
+.warranties-item, 
+.front, 
+.back {
+    width: 116px;
+    height: 116px;
+    cursor: default;
+}
+.warranty {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, 
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+}
+.front-item,
+.front-price,
+.front-calendar,
+.front-card,
+.front-ukraine,
+.front-star {
+    background: #52b1dd;
+    border-radius: 50%;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0 0 11px 3px rgba(0,0,0,.3);
+    border: 3px solid #fff;
+}
+.front-item:before,
+.front-price:before,
+.front-calendar:before,
+.front-card:before,
+.front-ukraine:before,
+.front-star:before {
+    content: "";
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -32px;
+}
+.front-item:before {
+    background: url(pictures_of_transportation/feather.png) no-repeat;
+}
+.front-price:before {
+    background: url(pictures_of_transportation/uk.png) no-repeat;
+}
+.front-calendar:before {
+    background: url(pictures_of_transportation/calendar.png) no-repeat;
+}
+.front-card:before{
+    background: url(pictures_of_transportation/card.png) no-repeat;
+}
+.front-ukraine:before {
+    background: url(pictures_of_transportation/ukraine.png) no-repeat;
+}
+.front-star:before {
+    background: url(pictures_of_transportation/star.png) no-repeat;
+}
+.front-star:after {
+    content: "10";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0 -12px;
+    font-size: 21px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #52b1dd;
+}
+.front-price:after {
+    content: "";
+    position: absolute;
+    bottom: 37px;
+    left: 37px;
+    width: 32px;
+    height: 32px;
+    background: url(pictures_of_transportation/uah.png) no-repeat;
+}
+.front-calendar:after {
+    content: "365";
+    position: absolute;
+    top: 46px;
+    left: 33px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.back {
+    transform: rotateY(180deg);
+}
+.back-item {
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #9cd70d;
+    text-align: center;
+    color: #ffffff;
+    padding: 26px 1px;
+    line-height: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    box-shadow: 0 0 11px 3px rgba(0,0,0,.3);
+	border: 3px solid #fff;
+}
+
+/********************************** sales */
+
+#sales {
+	width: 100%;
+	margin: 54px auto 0 auto;
+	overflow: hidden;
+	height: 273px;
+	position: relative;
+}
+#sales #sales-item {
+	position: absolute;
+	width: 600%;
+	margin: 0;
+	padding: 0;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	transition-property: all;
+	transition-duration: 1s;
+}
+#sales .sale {
+	width: 100%;
+	margin: 0 auto;
+	background: url(pictures_of_transportation/promo.png) center center no-repeat;
+	height: 100px;
+	width: 100%;
+	margin: 0;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	line-height: 75px;
+	list-style: none;
+}
+#sales li {
+	width: 16.66666666666666%;
+	float: right;
+	display: block;
+	margin: 0;
+}
+#sales-item .sale:before,
+#sales-item .sale:after {
+	content: '';
+	position: absolute;
+	background: #ffffff;
+	height: 3px;
+	width: 644px;
+	top: 10px;
+	left: 50%;
+	margin-left: -322px;
+}
+#sales-item .sale:after {
+	bottom: 36px;
+	top: auto;
+}
+li .sale:last-child {
+	font-size: 20px;
+}
+.image1 #sales-item{
+	right: 0;
+}
+.image2 #sales-item{
+	right:-100%;
+}
+.image3 #sales-item{
+	right:-200%;
+}
+.image4 #sales-item{
+	right:-300%;
+}
+.image5 #sales-item{
+	right:-400%;
+}
+.image6 #sales-item{
+	right:-500%;
+}
+.title-sale {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 17px;
+	position: relative;
+}
+.title-sale:before{
+	content: '';
+	position: absolute;
+	background: url(pictures_of_transportation/road.png)repeat-y;
+	width: 9px;
+	height: 115px;
+	top: -38px;
+	left: 50%;
+	margin-left: 4px;
+}
+.order {
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 75px;
+	padding: 0 38px;
+	background: #9cd70d;
+	position: relative;
+	box-shadow: 0 0 11px rgba(0,0,0,.3);
+	text-decoration: none;
+	margin: 60px auto 20px auto;
+	display: block;
+	width: 300px;
+	box-sizing: border-box;
+	color: #ffffff;
+}
+
+.block {
+	width: 964px;
+	margin: 60px auto 0 auto;
+}
+
+/************************** advantages */
+
+.advantages {
+	margin: 0 auto ;
+	overflow: hidden;
+	text-align: center;
+}
+.main,
+.advantages-item {
+	padding-bottom: 30px;
+	width: 310px;
+	cursor: default;
+}
+.advantages .advantages-item:first-child {
+	float: left;
+}
+.advantages-item {
+	background-color: rgba(255, 255, 255, .2);
+	margin: 5px 5px 18px 5px;
+	float: right;
+}
+.main {
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, .3);
+	overflow: hidden;
+}
+h2 {
+	line-height: 80px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+	font-weight: normal;
+	background: #3a8fc8;
+}
+.main h2 {
+	padding: 5px 0 0 0;
+	background: #52b1dd;
+	color: #2e498a;
+}
+.price {
+	line-height: 70px;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, .2);
+	margin: 0;
+	text-align: center;
+}
+.price span {
+	font-size: 22px;
+	font-weight: bolder;
+	padding: 0 4px;
+}
+.main .price {
+	background-color: rgba(255, 255, 255, .3);
+}
+.sitting,
+.dvd,
+.bag,
+.conditioner,
+.microphone,
+.table,
+.advantage {
+	margin: 0;
+	line-height: 32px;
+	position: relative;
+}
+.sitting,
+.dvd,
+.bag,
+.conditioner,
+.microphone,
+.table {
+	padding-left: 40px;
+	margin: 0 0 0 30px; 
+	text-align: left;
+}
+.advantage {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.sitting:before,
+.dvd:before,
+.bag:before,
+.conditioner:before,
+.microphone:before,
+.table:before,
+.advantage:before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+    top: 8px;
+    left: 0;
+} 
+.sitting:before {
+	background: url(pictures_of_transportation/sitting.png) no-repeat;
+}
+.dvd:before {
+	background: url(pictures_of_transportation/note.png) no-repeat;
+}
+.bag:before {
+	background: url(pictures_of_transportation/bag.png) no-repeat;
+}
+.conditioner:before {
+	background: url(pictures_of_transportation/snow.png) no-repeat;
+}
+.microphone:before {
+	background: url(pictures_of_transportation/microphone.png) no-repeat;
+}
+.table:before {
+	background: url(pictures_of_transportation/table.png) no-repeat;
+}
+.advantages-item .order,
+.main .order {
+	line-height: 55px;
+	padding: 0 75px;	
+	text-align: center;
+	display: block;
+	width: 85%;
+}
+.advantages-item .order {
+	margin: 55px auto 0 auto;
+}
+.main .order {
+	margin: 75px auto 0 auto;
+}
+
+.autopark {
+	overflow: hidden;
+	margin-top: 70px;
+	text-align: center;
+}
+.autopark-item {
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 75px;
+	padding: 40px 38px;
+	background: #9cd70d;
+	box-shadow: 0 0 11px rgba(0,0,0,.3);
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/************************************ informations */
+
+.informations {
+	margin: 75px auto 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+.informations-item {
+	display: inline-block;
+	width: 280px;
+	margin: 0 19px;
+	vertical-align: top;
+}
+.information {
+	width: 245px;
+	height: 245px;
+	border-radius: 50%;
+	margin: 0 auto 35px auto;
+	box-shadow: 0 0 11px rgba(0,0,0,.3);
+	overflow: hidden;
+	position: relative;
+}
+.information img {
+	height: 245px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+h3 {
+	font-weight: normal;
+	margin: 15px 0 0;
+	font-size: 19px;
+	text-align: center;
+	line-height: 22px;
+	padding: 0;
+}
+.information-item {
+	margin-top: 20px;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: justify;
+}
+
+/**************************** service */
+
+.services {
+	margin: 65px auto 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+.services-item {
+	display: inline-block;
+	width: 226px;
+	margin: 0 6px;
+	vertical-align: top;
+}
+.service {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 0 auto 35px auto;
+	box-shadow: 0 0 11px rgba(0,0,0,.3);
+	overflow: hidden;
+}
+
+/***************************** ordering */
+
+.ordering {
+	margin: 50px auto 0 auto;
+	padding: 20px;
+}
+.ordering-item {
+	margin: 0 auto;
+	width: 400px;
+	box-sizing: border-box;
+	background: transparent;
+}
+.ordering-item .title {
+	margin: 0;
+	padding: 0 0 32px;
+	text-align: center;
+	font-size: 36px;
+	line-height: 30px;
+	text-transform: capitalize;
+}
+.picture {
+	height: 245px;
+	margin: 0;
+	background: url(pictures_of_transportation/vitoout.jpg) no-repeat;
+}
+.ordering-item form {
+	background: #ffffff;
+	padding: 20px;
+}
+.show-text,
+.show-tel,
+.show-email,
+.show-aticle {
+	width: 310px;
+	height: 45px;
+	background: #ffffff;
+	margin: 20px 10px 0 35px;
+	padding: 5px 10px;
+	border: 0 solid #ffffff;
+	border-bottom: 2px solid #f1f1f1;
+	color: #B8B9BB;/********************/
+	box-sizing: border-box;
+	font-size: 16px;
+}
+.show-text,
+.show-tel {
+	background: url(pictures_of_transportation/impotent.png) no-repeat right center;
+}
+.show-text:focus,
+.show-tel:focus,
+.show-email:focus,
+.show-aticle:focus {
+	outline: 0;
+}
+.show-text {
+	background-image: url(pictures_of_transportation/man.png), 
+	url(pictures_of_transportation/impotent.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+}
+.show-tel {
+	background: url(pictures_of_transportation/phone.png), 
+	url(pictures_of_transportation/impotent.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+}
+.show-email {
+	background: url(pictures_of_transportation/mail.png) no-repeat left center;
+}
+.show-aticle {
+	background: url(pictures_of_transportation/car.png) no-repeat left center;
+}
+input::-webkit-input-placeholder {
+	color: #B8B9BB; 
+	padding-left: 20px;
+}
+input::-moz-placeholder {
+	color: #B8B9BB; 
+}
+.show-submit-site {
+	margin: 40px auto 0 auto;
+	text-align: center;
+	background: #9cd70d;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 22px 38px;
+	box-shadow: 0 0 11px rgba(0,0,0,.3);
+	border: 0;
+	display: block;
+}
+
+/***************************** footer */
+
+.footer{
+	background: #4a4a4a;
+	margin: 45px 0 0 0;
+	padding: 20px 60px;
+	box-sizing: border-box;	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.copyright {
+	float: left;
+	font-size: 20px;
+	line-height: 42px;
+}
+.copyright .working-hour span {
+	padding: 0 0 0 23px;
+}
+.footer .phones{
+	font-size: 30px;
+	width: 195px;
+	margin: 0 auto;
+	line-height: 38px;
+}
+.footer .phones .phone {
+	font-size: 30px;
+	line-height: 38px;
+	margin: 0;
+	font-weight: 500;
+}
+.mail {
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+	white-space: nowrap;
+}
+.address {
+	float: right;
+}
+.address-item {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 35px;
+	text-transform: uppercase;
+	text-align: right;
+}
+.copyright .vk,
+.copyright .facebook,
+.copyright .instagram {
+	text-decoration: none;
+	float: left;
+	margin: 10px 40px 0 0;
+	line-height: 15px;
+	background: #3a8fc8;
+	position: relative;
+	padding: 32px 32px 0 0;
+}
+.copyright .vk:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(pictures_of_transportation/vk.png)no-repeat;
+	width: 32px;
+	height: 32px;
+	content: '';
+}
+.copyright .facebook:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(pictures_of_transportation/facebook.png)no-repeat;
+	width: 32px;
+	height: 32px;
+	content: '';
+}
+.copyright .instagram:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(pictures_of_transportation/instagram.png)no-repeat;
+	width: 32px;
+	height: 32px;
+	content: '';
+}
+.network{
+	display: none;
+}
+
+/**************************** media-queries */
+
+@media screen and (max-width: 1125px) {
+	.header,
+	.footer-item,
+	.content, 
+	.thin-header .marker {
+		width: 100%;
+	}
+	#slider .car1 {
+	 	background-image: url(pictures_of_transportation/sliderl/vito.jpg);
+	}
+	#slider .car2 {
+		background-image: url(pictures_of_transportation/sliderl/vitogreywhite.jpg);
+	}
+	#slider .car3 {
+	 	background-image: url(pictures_of_transportation/sliderl/camry.jpg);
+	}
+	#slider .car4 {
+	 	background-image: url(pictures_of_transportation/sliderl/sprinterin.jpg);
+	}
+	#slider .car5 {
+	 	background-image: url(pictures_of_transportation/sliderl/vitogrey.jpg);
+	}
+	#slider .car6 {
+	 	background-image: url(pictures_of_transportation/sliderl/camryin.jpg);
+	}
+	#slider .car7 {
+	 	background-image: url(pictures_of_transportation/sliderl/common.jpg);
+	}
+	#slider .car8 {
+	 	background-image: url(pictures_of_transportation/sliderl/s500.jpg);
+	}
+	#slider .car9 {
+	 	background-image: url(pictures_of_transportation/sliderl/sprinter.jpg);
+	}
+	#slider .car10 {
+	 	background-image: url(pictures_of_transportation/sliderl/touareg.jpg);
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.header .marker {
+		width: 235px;
+		padding: 15px 20px;
+	}
+	.thin-header .marker {
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+		padding: 10px 7px;
+	}
+	.thin-header .marker .title {
+		padding-left: 95px;
+		position: absolute;
+		left: 0;
+	}
+	.thin-header .marker .phones {
+		margin: 0 auto;
+		width: 193px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 200px;
+	}
+	.thin-header .working-hours {
+		position: absolute;
+		right: 5px;
+	}
+	.thin-header .marker .phone { 
+		margin: 0;
+		line-height: 35px;
+	}
+	.thin-header .working-hour span {
+		margin-left: 5px;
+	}
+	.warranties-item, .front, .back {
+		margin-bottom: 16px;
+	}
+	.block {
+		width: 100%;
+	}
+	.advantages-item,
+	.main {
+		margin-bottom: 40px;
+	}
+	.advantages .advantages-item:first-child/*???????*/ {
+		margin: 0 0 40px 15%;
+	}
+	.advantages-item /*?????????*/{
+		margin: 0 2% 40px 9%;
+	}
+	.informations-item {
+		margin: 0 20px;
+		width: 95%;
+	}
+	.information-item {
+		margin: 20px auto 50px auto;
+	}
+	.informations-item h3 {
+		width: 400px;
+		margin: 15px auto 15px auto;
+	}
+	.services h3 {
+		height: 130px;
+	}
+	.services {
+		margin: 0 auto 50px auto;
+	}
+	.services-item {
+	    margin: 0 7% 20px 7%;
+	}
+	.footer {
+		padding: 20px 5px;
+	}
+	.footer .phones .phone {
+		font-size: 27px;
+	}
+	.address-item,
+	.mail {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.thin-header .marker .title {
+		font-size: 20px;
+		padding-left: 65px;
+		width: 75px;
+	}
+	.thin-header .marker .phones {
+		width: 116px;
+		padding: 0 100px;
+	}
+	.thin-header .marker .phone { 
+		width: auto;
+		font-size: 18px;
+	}
+	.thin-header .working-hour {
+		font-size: 17px;
+	}
+	#slider .car1 {
+	 	background-image: url(pictures_of_transportation/sliderm/vito.jpg);
+	}
+	#slider .car2 {
+		background-image: url(pictures_of_transportation/sliderm/vitogreywhite.jpg);
+	}
+	#slider .car3 {
+	 	background-image: url(pictures_of_transportation/sliderm/camry.jpg);
+	}
+	#slider .car4 {
+	 	background-image: url(pictures_of_transportation/sliderm/sprinterin.jpg);
+	}
+	#slider .car5 {
+	 	background-image: url(pictures_of_transportation/sliderm/vitogrey.jpg);
+	}
+	#slider .car6 {
+	 	background-image: url(pictures_of_transportation/sliderm/camryin.jpg);
+	}
+	#slider .car7 {
+	 	background-image: url(pictures_of_transportation/sliderm/common.jpg);
+	}
+	#slider .car8 {
+	 	background-image: url(pictures_of_transportation/sliderm/s500.jpg);
+	}
+	#slider .car9 {
+	 	background-image: url(pictures_of_transportation/sliderm/sprinter.jpg);
+	}
+	#slider .car10 {
+	 	background-image: url(pictures_of_transportation/sliderm/touareg.jpg);
+	}
+	#sales .sale {
+		font-size: 17px;
+	}
+	.services-item {
+ 		margin: 0 7% 35px 7%;
+ 	}
+	.services h3 {
+		height: auto;
+	}
+	.copyright {
+		display: none;
+	}
+	.network {
+		display: block;
+	}
+	.footer .phones {
+		float: left;
+		position: relative;
+	}
+	.footer .phones .phone {
+		font-size: 24px;
+		line-height: 35px;
+	}
+	.network .vk,
+	.network .facebook,
+	.network .instagram {
+		text-decoration: none;
+		float: left;
+		margin: 10px 20px 0 5px;
+		line-height: 15px;
+		background: #3a8fc8;
+		position: relative;
+		padding: 32px 32px 0 0;
+	}
+	.network .vk:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(pictures_of_transportation/vk.png)no-repeat;
+		width: 32px;
+		height: 32px;
+		content: '';
+	}
+	.network .facebook:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(pictures_of_transportation/facebook.png)no-repeat;
+		width: 32px;
+		height: 32px;
+		content: '';
+	}
+	.network .instagram:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(pictures_of_transportation/instagram.png)no-repeat;
+		width: 32px;
+		height: 32px;
+		content: '';
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.head {
+		height: 100px;
+	}
+	.header .marker {
+		height: 100px;
+		width: 100%;
+		background: transparent;
+	}
+	.marker .title {
+		margin: 0;
+		padding-left: 63px;
+		width: 90px;
+	}
+	.marker .phones {
+		position: absolute;
+		right: 17px;
+		top: 47px;
+	}
+	.marker .phone {
+		font-size: 23px;
+		line-height: 28px;
+	}
+	.working-hours {
+		display: none;
+	}
+	.thin-header .marker .working-hours {
+		display: none;
+	}
+	.thin-header .marker .phones {
+		float: right;
+		padding: 0 0 0 100px;
+		top: 12px;
+	}
+	#slider .car1 {
+	 	background-image: url(pictures_of_transportation/sliders/vito.jpg);
+	}
+	#slider .car2 {
+		background-image: url(pictures_of_transportation/sliders/vitogreywhite.jpg);
+	}
+	#slider .car3 {
+	 	background-image: url(pictures_of_transportation/sliders/camry.jpg);
+	}
+	#slider .car4 {
+	 	background-image: url(pictures_of_transportation/sliders/sprinterin.jpg);
+	}
+	#slider .car5 {
+	 	background-image: url(pictures_of_transportation/sliders/vitogrey.jpg);
+	}
+	#slider .car6 {
+	 	background-image: url(pictures_of_transportation/sliders/camryin.jpg);
+	}
+	#slider .car7 {
+	 	background-image: url(pictures_of_transportation/sliders/common.jpg);
+	}
+	#slider .car8 {
+	 	background-image: url(pictures_of_transportation/sliders/s500.jpg);
+	}
+	#slider .car9 {
+	 	background-image: url(pictures_of_transportation/sliders/sprinter.jpg);
+	}
+	#slider .car10 {
+	 	background-image: url(pictures_of_transportation/sliders/touareg.jpg);
+	}
+	.informations-item {
+		margin: 0 auto;
+	}
+	.informations-item h3 {
+		width: auto;
+	}
+	.ordering-item {
+		width: 380px;
+	}
+	.show-text, .show-tel {
+		width: 86%;
+	}
+	.copyright {
+		display: block;
+	}
+	.footer .phones .phone {
+		display: none;
+	}
+	.footer .phones {
+		float: right;
+		line-height: 20px;
+		width: auto;
+	}
+	.copyright .working-hour span {
+		padding: 0;
+	}
+	.network {
+		display: none;
+	}
+}

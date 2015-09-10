@@ -1,0 +1,775 @@
+body {
+	margin: 0;
+	padding: 0 0 230px 0;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	background: #309da2;
+	background: linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -o-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -moz-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -ms-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -webkit-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -icab-linear-gradient(-45deg, #2e4b8b, #31b3a9);
+	background: -rhtmllinear-gradient(-45deg, #2e4b8b, #31b3a9);
+	position: relative;
+	overflow-y: scroll;
+}
+
+/******************************** header */
+
+.fool-photo {
+	display: none;
+}
+.head {
+	height: 50px;
+	background: rgba(255,255,255,.1);
+}
+.header,
+.footer-item,
+.content {
+	width: 1105px;
+	margin: 0 auto;
+}
+.languages {
+	float: right;
+}
+.language {
+	display: block;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-size: 18px;
+	padding: 0 30px 0 30px;
+	float: left;
+	color: #2e498a;
+	font-weight: bold;
+	line-height: 46px;
+	background: #3a8fc8;
+	border-bottom: 4px solid #3a8fc8;
+}
+.active {
+	color: #ffffff;
+	background: #52b1dd;
+	border-bottom: 4px solid #9cd70d;
+}
+
+/****************************** marker */
+
+.marker {
+	width: 275px;
+	height: 315px;
+	background: #3a8fc8;
+	padding:15px 41px 41px;
+	z-index: 5;
+	box-sizing: border-box;
+	position: fixed;
+}
+.marker .title {
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 35px;
+	margin: 10px 0 30px 0;
+	font-family: Arial;
+	text-decoration: none;
+	padding-left: 105px;
+	color: #ffffff;
+	position: relative;
+	display: block;
+}
+.marker .title:before {
+	position: absolute;
+	top: -40px;
+	left: -25px;
+	content: '';
+	width: 110px;
+	height: 110px;
+	background: url(pictures_of_transportation/logo.png)
+}
+.phone {
+	font-size: 30px;
+	line-height: 40px;
+	margin: 0;
+	font-weight: 500;
+}
+.working-hour {
+	font-size: 19px;
+	line-height: 35px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.working-hour span {
+	float: right;
+}
+.working-hours {
+	margin: 15px 0 0 0;
+}
+
+.thin-header .head {
+	background: #3a8fc8;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+}
+.thin-header .marker {
+	width: 1000px;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	position: absolute;
+}
+.thin-header .marker .title {
+	margin: 0;
+	width: 75px;
+	float: left;
+}
+.thin-header .marker .title:before {
+	top: -34px;
+}
+.thin-header .marker .phone {
+	line-height: 70px;
+	margin: 0 0 0 100px;
+	float: left;
+}
+.thin-header .working-hours {
+	margin: 0 0 0 0;
+	float: right;
+}
+.thin-header .languages {
+	display: none;
+}
+ 
+/***************************** h1 */
+
+.transportation {
+	width: 980px;
+	margin: 0 auto;
+	padding-left: 275px;
+	box-sizing: border-box;
+}
+.transportation h1 {
+	text-align: right;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-size: 50px;
+	line-height: 75px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.sub-title {
+	line-height: 40px;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-weight: normal;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.content {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/********************* car */
+
+.car {
+	background: rgba(255,255,255,.2);
+	width: 100%;
+	margin: 50px auto 0 auto;
+	padding: 15px;
+	box-sizing: border-box;
+	text-align: center;
+
+}
+.car-photo {
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.main {
+	height: 270px;
+	width: 465px;
+	overflow: hidden;
+	border: 3px solid #ffffff;
+	cursor: pointer;
+}
+.main img{
+	height: 270px;
+}
+.inside,
+.outside {
+	overflow: hidden;
+	width: 153px;
+	height: 93px;
+	border-bottom: 3px solid #ffffff;
+	border-right: 3px solid #ffffff;
+	border-left: 3px solid #ffffff;
+	cursor: pointer;
+	float: left;
+}
+.outside {
+	border-left: 0;
+}
+.inside img,
+.outside img {
+	height: 93px;
+}
+.photo {
+	display: none;
+}
+.main:hover .photo,
+.inside:hover .photo,
+.outside:hover .photo {
+	position: absolute;
+	width: 100%;
+	display: block;
+	background: rgba(0,0,0,.8);
+	height: 100%;
+	padding: 0;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+.photo-item {
+	width: 100%;
+	border: 3px solid #ffffff;
+	overflow: hidden;
+	height: 660px;
+}
+.photo-item img {
+	height: 660px;
+	margin-left: 0;
+}
+
+/********************** car-info */
+
+.car-info  {
+	margin-left: -3px;
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	position: relative;
+}
+h2,
+.nomber {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+	font-weight: normal;
+}
+h2 {
+	background: #3a8fc8;
+	line-height: 55px;
+	padding-right: 35px;
+}
+.nomber {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 0;
+	right: 0;
+	background: #3A6FD5;
+	line-height: 51px;
+}
+.price {
+	line-height: 45px;
+	font-size: 22px;
+	background-color: rgba(255, 255, 255, .2);
+	margin: 0;
+	text-align: right;
+	padding-right: 105px;
+}
+.price span {
+	font-size: 22px;
+	font-weight: bolder;
+	padding: 0 7px;
+}
+.sitting,
+.dvd,
+.bag,
+.conditioner,
+.microphone,
+.table,
+.air,
+.advantage {
+	margin: 0;
+	line-height: 32px;
+	position: relative;
+}
+.sitting,
+.dvd,
+.bag,
+.conditioner,
+.microphone,
+.air,
+.table {
+	padding-left: 40px;
+	margin: 0 0 0 115px; 
+	text-align: left;
+}
+.advantage {
+	text-align: center;
+}
+.sitting:before,
+.dvd:before,
+.bag:before,
+.conditioner:before,
+.microphone:before,
+.table:before,
+.air:before,
+.advantage:before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+    top: 8px;
+    left: 0;
+} 
+.sitting:before {
+	background: url(pictures_of_transportation/sitting.png) no-repeat;
+}
+.dvd:before {
+	background: url(pictures_of_transportation/note.png) no-repeat;
+}
+.bag:before {
+	background: url(pictures_of_transportation/bag.png) no-repeat;
+}
+.conditioner:before {
+	background: url(pictures_of_transportation/snow.png) no-repeat;
+}
+.microphone:before {
+	background: url(pictures_of_transportation/microphone.png) no-repeat;
+}
+.air:before {
+	background: url(pictures_of_transportation/air.png) no-repeat;
+}
+.table:before {
+	background: url(pictures_of_transportation/table.png) no-repeat;
+}
+.order {
+	font-size: 18px;
+	text-transform: uppercase;
+	background: #9cd70d;
+	box-shadow: 0 0 11px rgba(0,0,0,.3);
+	text-decoration: none;
+	display: block;
+	box-sizing: border-box;
+	color: #ffffff;
+	line-height: 60px;
+	padding: 0 75px;
+	width: 270px;
+	text-align: center;
+	margin: 19px auto 0 auto;
+}
+
+/***************************** ordering */
+
+.ordering {
+	margin: 50px auto 0 auto;
+	padding: 20px;
+}
+.ordering-item {
+	margin: 0 auto;
+	width: 400px;
+	box-sizing: border-box;
+	background: transparent;
+}
+.ordering-item .title {
+	margin: 0;
+	padding: 0 0 32px;
+	text-align: center;
+	font-size: 36px;
+	line-height: 30px;
+	text-transform: capitalize;
+}
+.picture {
+	height: 245px;
+	margin: 0;
+	background: url(pictures_of_transportation/vitoout.jpg) no-repeat;
+}
+.ordering-item form {
+	background: #ffffff;
+	padding: 20px;
+}
+.show-text,
+.show-tel,
+.show-email,
+.show-aticle {
+	width: 310px;
+	height: 45px;
+	background: #ffffff;
+	margin: 20px 10px 0 35px;
+	padding: 5px 10px;
+	border: 0 solid #ffffff;
+	border-bottom: 2px solid #f1f1f1;
+	color: #B8B9BB;/********************/
+	box-sizing: border-box;
+	font-size: 16px;
+}
+.show-text,
+.show-tel {
+	background: url(pictures_of_transportation/impotent.png) no-repeat right center;
+}
+.show-text:focus,
+.show-tel:focus,
+.show-email:focus,
+.show-aticle:focus {
+	outline: 0;
+}
+.show-text {
+	background-image: url(pictures_of_transportation/man.png), 
+	url(pictures_of_transportation/impotent.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+}
+.show-tel {
+	background: url(pictures_of_transportation/phone.png), 
+	url(pictures_of_transportation/impotent.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+}
+.show-email {
+	background: url(pictures_of_transportation/mail.png) no-repeat left center;
+}
+.show-aticle {
+	background: url(pictures_of_transportation/car.png) no-repeat left center;
+}
+input::-webkit-input-placeholder {
+	color: #B8B9BB; 
+	padding-left: 20px;
+}
+input::-moz-placeholder {
+	color: #B8B9BB; 
+}
+.show-submit-site {
+	margin: 40px auto 0 auto;
+	text-align: center;
+	background: #9cd70d;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 22px 38px;
+	box-shadow: 0 0 11px rgba(0,0,0,.3);
+	border: 0;
+	display: block;
+}
+
+/***************************** footer */
+
+.footer{
+	background: #4a4a4a;
+	margin: 45px 0 0 0;
+	padding: 20px 60px;
+	box-sizing: border-box;	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.copyright {
+	float: left;
+	font-size: 20px;
+	line-height: 42px;
+}
+.copyright .working-hour span {
+	padding: 0 0 0 23px;
+}
+.footer .phones{
+	font-size: 30px;
+	width: 195px;
+	margin: 0 auto;
+	line-height: 38px;
+}
+.footer .phones .phone {
+	font-size: 30px;
+	line-height: 38px;
+	margin: 0;
+	font-weight: 500;
+}
+.mail {
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+	white-space: nowrap;
+}
+.address {
+	float: right;
+}
+.address-item {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 35px;
+	text-transform: uppercase;
+	text-align: right;
+}
+.copyright .vk,
+.copyright .facebook,
+.copyright .instagram {
+	text-decoration: none;
+	float: left;
+	margin: 10px 40px 0 0;
+	line-height: 15px;
+	background: #3a8fc8;
+	position: relative;
+	padding: 32px 32px 0 0;
+}
+.copyright .vk:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(pictures_of_transportation/vk.png)no-repeat;
+	width: 32px;
+	height: 32px;
+	content: '';
+}
+.copyright .facebook:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(pictures_of_transportation/facebook.png)no-repeat;
+	width: 32px;
+	height: 32px;
+	content: '';
+}
+.copyright .instagram:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(pictures_of_transportation/instagram.png)no-repeat;
+	width: 32px;
+	height: 32px;
+	content: '';
+}
+.network{
+	display: none;
+}
+
+/**************************** media-queries */
+
+@media screen and (max-width: 1125px) {
+	.header,
+	.footer-item,
+	.thin-header .marker {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 996px) {
+	.header .marker {
+		width: 235px;
+		padding: 15px 20px;
+	}
+	.thin-header .marker {
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+		padding: 10px 7px;
+	}
+	.thin-header .marker .title {
+		padding-left: 95px;
+		position: absolute;
+		left: 0;
+	}
+	.thin-header .marker .phones {
+		margin: 0 auto;
+		width: 193px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 200px;
+	}
+	.thin-header .working-hours {
+		position: absolute;
+		right: 5px;
+	}
+	.thin-header .marker .phone { 
+		margin: 0;
+		line-height: 35px;
+	}
+	.thin-header .working-hour span {
+		margin-left: 5px;
+	}
+	.transportation,
+	.content {
+		width: 100%;
+	}
+	.transportation {
+		padding-right: 10px;
+	}
+	.transportation h1 {
+		font-size: 36px;
+		line-height: 57px;
+	}
+	.car {
+		width: 471px;
+		padding: 0;
+	}
+	.car-info {
+		width: 100%;
+		margin-left: 0;
+		padding-bottom: 20px;
+	}
+	.footer {
+		padding: 20px 5px;
+	}
+	.footer .phones .phone {
+		font-size: 27px;
+	}
+	.address-item,
+	.mail {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 650px) {
+
+	.thin-header .marker .title {
+		font-size: 20px;
+		padding-left: 65px;
+		width: 75px;
+	}
+	.thin-header .marker .phones {
+		width: 116px;
+		padding: 0 100px;
+	}
+	.thin-header .marker .phone { 
+		width: auto;
+		font-size: 18px;
+	}
+	.thin-header .working-hour {
+		font-size: 17px;
+	}
+	.transportation {
+		padding-left: 0;
+	}
+	.transportation h1 {
+		margin-top: 255px;
+		text-align: center;
+		font-size: 44px;
+		line-height: 70px;
+	}
+	.sub-title {
+		text-align: center;
+	}
+	.copyright {
+		display: none;
+	}
+	.network {
+		display: block;
+	}
+	.footer .phones {
+		float: left;
+		position: relative;
+	}
+	.footer .phones .phone {
+		font-size: 24px;
+		line-height: 35px;
+	}
+	.network .vk,
+	.network .facebook,
+	.network .instagram {
+		text-decoration: none;
+		float: left;
+		margin: 10px 20px 0 5px;
+		line-height: 15px;
+		background: #3a8fc8;
+		position: relative;
+		padding: 32px 32px 0 0;
+	}
+	.network .vk:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(pictures_of_transportation/vk.png)no-repeat;
+		width: 32px;
+		height: 32px;
+		content: '';
+	}
+	.network .facebook:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(pictures_of_transportation/facebook.png)no-repeat;
+		width: 32px;
+		height: 32px;
+		content: '';
+	}
+	.network .instagram:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(pictures_of_transportation/instagram.png)no-repeat;
+		width: 32px;
+		height: 32px;
+		content: '';
+	}
+}
+@media screen and (max-width: 487px){
+	.car {
+		width: 438px;
+	}
+	.main {
+		width: 432px;
+	}
+	.inside, .outside {
+		width: 142px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.head {
+		height: 100px;
+	}
+	.header .marker {
+		height: 100px;
+		width: 100%;
+		background: transparent;
+	}
+	.marker .title {
+		margin: 0;
+		padding-left: 63px;
+		width: 90px;
+	}
+	.marker .phones {
+		position: absolute;
+		right: 17px;
+		top: 47px;
+	}
+	.marker .phone {
+		font-size: 23px;
+		line-height: 28px;
+	}
+	.working-hours {
+		display: none;
+	}
+	.thin-header .marker .working-hours {
+		display: none;
+	}
+	.thin-header .marker .phones {
+		float: right;
+		padding: 0 0 0 100px;
+		top: 12px;
+	}
+	.transportation h1 {
+		margin-top: 20px;
+	}
+	.copyright {
+		display: block;
+	}
+	.footer .phones .phone {
+		display: none;
+	}
+	.footer .phones {
+		float: right;
+		line-height: 20px;
+		width: auto;
+	}
+	.copyright .working-hour span {
+		padding: 0;
+	}
+	.network {
+		display: none;
+	}
+}
