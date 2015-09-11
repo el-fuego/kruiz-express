@@ -9,8 +9,6 @@ body {
 	background: -moz-linear-gradient(-45deg, #2e4b8b, #31b3a9);
 	background: -ms-linear-gradient(-45deg, #2e4b8b, #31b3a9);
 	background: -webkit-linear-gradient(-45deg, #2e4b8b, #31b3a9);
-	background: -icab-linear-gradient(-45deg, #2e4b8b, #31b3a9);
-	background: -rhtmllinear-gradient(-45deg, #2e4b8b, #31b3a9);
 	position: relative;
 	overflow-y: scroll;
 }
@@ -46,10 +44,15 @@ body {
 	background: #3a8fc8;
 	border-bottom: 4px solid #3a8fc8;
 }
-.active {
+.language:hover {
+	border-color: #9cd70d;
+	color: #ffffff;
+}
+.language.active,
+.language.active:hover {
 	color: #ffffff;
 	background: #52b1dd;
-	border-bottom: 4px solid #9cd70d;
+	border-color: #9cd70d;
 }
 
 /****************************** marker */
@@ -68,7 +71,7 @@ body {
 	font-weight: normal;
 	line-height: 35px;
 	margin: 10px 0 30px 0;
-	font-family: Arial;
+	font-family: arial;
 	text-decoration: none;
 	padding-left: 105px;
 	color: #ffffff;
@@ -380,14 +383,16 @@ h2 {
 	width: 400px;
 	box-sizing: border-box;
 	background: transparent;
+	box-shadow: 0 0 200px rgba(255,255,255,0.7);
 }
 .order-form .title {
 	margin: 0;
-	padding: 0 0 32px;
+	padding: 32px 0;
 	text-align: center;
 	font-size: 36px;
 	line-height: 30px;
 	text-transform: capitalize;
+	background: #3a8fc8;
 }
 .picture {
 	height: 245px;
@@ -456,6 +461,7 @@ input::-moz-placeholder {
 .submit-order:hover {
 	border-bottom-color: #3a8fc8;
 }
+
 /***************************** footer */
 
 .footer{
@@ -511,11 +517,12 @@ input::-moz-placeholder {
 .copyright .instagram {
 	text-decoration: none;
 	float: left;
-	margin: 10px 40px 0 0;
+	margin: 10px 20px 0 20px;
 	line-height: 15px;
 	background: #3a8fc8;
 	position: relative;
 	padding: 32px 32px 0 0;
+	border: 4px solid #3a8fc8;
 }
 .copyright .vk:after {
 	position: absolute;
@@ -576,7 +583,6 @@ input::-moz-placeholder {
 	.thin-header .marker .phones {
 		margin: 0 auto;
 		width: 193px;
-		margin: 0 auto;
 		text-align: center;
 		padding: 0 200px;
 	}
@@ -666,16 +672,21 @@ input::-moz-placeholder {
 		font-size: 24px;
 		line-height: 35px;
 	}
+	.network {
+		margin: 0 auto;
+		width: 180px;
+	}
 	.network .vk,
 	.network .facebook,
 	.network .instagram {
 		text-decoration: none;
 		float: left;
-		margin: 10px 20px 0 5px;
+		margin: 20px 10px 0 10px;
 		line-height: 15px;
 		background: #3a8fc8;
 		position: relative;
 		padding: 32px 32px 0 0;
+		border: 4px solid #3a8fc8;
 	}
 	.network .vk:after {
 		position: absolute;

@@ -1,6 +1,6 @@
 
 var scrolledClass = 'thin-header';
-document.body.onscroll = function () {
+window.onscroll = function () {
 	if (+document.body.scrollTop > 80) {
 		if (document.body.className.indexOf(scrolledClass) < 0) {
 			document.body.className += ' ' + scrolledClass;

@@ -7,10 +7,10 @@ function slider (element, maxImages, disableOnHover) {
 	     
 	element.onmouseover = function () {
 		isHovered = true;
-	}
+	};
 	element.onmouseout = function () {
 		isHovered = false;
-	}
+	};
 
 	function changeImage(requiredImage) {
 
@@ -39,7 +39,7 @@ function slider (element, maxImages, disableOnHover) {
 		    
 		}
 		
-	    clearTimeout(timeout)
+	    clearTimeout(timeout);
 	    timeout = setTimeout(changeImage, secDuration*1000);
 	}
 
@@ -48,7 +48,7 @@ function slider (element, maxImages, disableOnHover) {
 		el.onclick = function () {
 			changeImage(el.getAttribute('data-id'));
 		}
-	})
+	});
 	
 
 
@@ -57,14 +57,14 @@ function slider (element, maxImages, disableOnHover) {
 		el.onclick = function () {
 			changeImage(imageNumber+1);
 		}
-	})
+	});
 
 	var prevImage = element.getElementsByClassName('prev-image');
 	Array.prototype.forEach.call(prevImage, function(el){
 		el.onclick = function () {
 			changeImage(imageNumber-1);
 		}
-	})
+	});
 	
 	changeImage(1);
 }
@@ -85,6 +85,6 @@ window.onscroll = function () {
 	} else {
 		document.body.className = document.body.className.replace(new RegExp(' ?' + scrolledClass), '')
 	}
-}
+};
 document.body.onscroll();
 
