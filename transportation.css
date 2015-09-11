@@ -30,6 +30,7 @@ body {
 .languages {
 	float: right;
 }
+.language,
 .language {
 	display: block;
 	text-decoration: none;
@@ -43,10 +44,15 @@ body {
 	background: #3a8fc8;
 	border-bottom: 4px solid #3a8fc8;
 }
-.active {
+.language:hover {
+	border-color: #9cd70d;
+	color: #ffffff;
+}
+.language.active,
+.language.active:hover {
 	color: #ffffff;
 	background: #52b1dd;
-	border-bottom: 4px solid #9cd70d;
+	border-color: #9cd70d;
 }
 
 /****************************** marker */
@@ -468,7 +474,7 @@ body {
 	width: 100%;
 	margin: 54px auto 0 auto;
 	overflow: hidden;
-	height: 273px;
+	height: 284px;
 	position: relative;
 }
 #sales #sales-item {
@@ -558,7 +564,7 @@ li .sale:last-child {
 .order {
 	font-size: 18px;
 	text-transform: uppercase;
-	line-height: 75px;
+	line-height: 67px;
 	padding: 0 38px;
 	background: #9cd70d;
 	position: relative;
@@ -569,11 +575,17 @@ li .sale:last-child {
 	width: 300px;
 	box-sizing: border-box;
 	color: #ffffff;
+	border-top: 4px solid #9cd70d;
+	border-bottom: 4px solid #9cd70d;
+}
+
+.order:hover {
+	border-bottom-color: #fff;
 }
 
 .block {
 	width: 964px;
-	margin: 60px auto 0 auto;
+	margin: 80px auto 0 auto;
 }
 
 /************************** advantages */
@@ -705,24 +717,32 @@ h2 {
 
 .autopark {
 	overflow: hidden;
-	margin-top: 70px;
+	margin-top: 80px;
 	text-align: center;
 }
-.autopark-item {
+.view-autopark {
 	font-size: 18px;
 	text-transform: uppercase;
-	line-height: 75px;
-	padding: 40px 38px;
+	line-height: 68px;
+	padding: 0 44px;
 	background: #9cd70d;
 	box-shadow: 0 0 11px rgba(0,0,0,.3);
 	text-decoration: none;
 	color: #ffffff;
+	border-top: 4px solid #9cd70d;
+	border-bottom: 4px solid #9cd70d;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.view-autopark:hover {
+	border-bottom-color: #fff;
 }
 
 /************************************ informations */
 
 .informations {
-	margin: 75px auto 0 auto;
+	margin: 150px auto 0 auto;
 	overflow: hidden;
 	text-align: center;
 }
@@ -765,9 +785,10 @@ h3 {
 /**************************** service */
 
 .services {
-	margin: 65px auto 0 auto;
+	margin: 80px auto 0 auto;
 	overflow: hidden;
 	text-align: center;
+	padding-top: 11px;
 }
 .services-item {
 	display: inline-block;
@@ -784,96 +805,90 @@ h3 {
 	overflow: hidden;
 }
 
-/***************************** ordering */
+/***************************** order-form */
 
-.ordering {
-	margin: 50px auto 0 auto;
-	padding: 20px;
-}
-.ordering-item {
-	margin: 0 auto;
+.order-form {
+	margin: 150px auto 0 auto;
 	width: 400px;
 	box-sizing: border-box;
 	background: transparent;
+	box-shadow: 0 0 200px rgba(255,255,255,0.7);
 }
-.ordering-item .title {
+.order-form .title {
 	margin: 0;
-	padding: 0 0 32px;
+	padding: 32px 0;
 	text-align: center;
 	font-size: 36px;
 	line-height: 30px;
 	text-transform: capitalize;
+	background: #3a8fc8;
 }
 .picture {
 	height: 245px;
 	margin: 0;
 	background: url(pictures_of_transportation/vitoout.jpg) no-repeat;
 }
-.ordering-item form {
+.order-form form {
 	background: #ffffff;
-	padding: 20px;
+	padding: 20px 20px 40px 20px;
 }
-.show-text,
-.show-tel,
-.show-email,
-.show-aticle {
+.text-field,
+.tel-field,
+.email-field,
+.car-code-field {
 	width: 310px;
 	height: 45px;
-	background: #ffffff;
+	background: #ffffff no-repeat left center;
 	margin: 20px 10px 0 35px;
-	padding: 5px 10px;
+	padding: 5px 32px;
 	border: 0 solid #ffffff;
 	border-bottom: 2px solid #f1f1f1;
-	color: #B8B9BB;/********************/
+	color: #333;
 	box-sizing: border-box;
 	font-size: 16px;
 }
-.show-text,
-.show-tel {
-	background: url(pictures_of_transportation/impotent.png) no-repeat right center;
-}
-.show-text:focus,
-.show-tel:focus,
-.show-email:focus,
-.show-aticle:focus {
+.text-field:focus,
+.tel-field:focus,
+.email-field:focus,
+.car-code-field:focus {
 	outline: 0;
 }
-.show-text {
-	background-image: url(pictures_of_transportation/man.png), 
-	url(pictures_of_transportation/impotent.png);
-	background-repeat: no-repeat;
-	background-position: left center, right center;
+.text-field {
+	background-image: url(pictures_of_transportation/man.png);
 }
-.show-tel {
-	background: url(pictures_of_transportation/phone.png), 
-	url(pictures_of_transportation/impotent.png);
-	background-repeat: no-repeat;
-	background-position: left center, right center;
+.tel-field {
+	background-image: url(pictures_of_transportation/phone.png);
 }
-.show-email {
-	background: url(pictures_of_transportation/mail.png) no-repeat left center;
+.email-field {
+	background-image: url(pictures_of_transportation/mail.png);
 }
-.show-aticle {
-	background: url(pictures_of_transportation/car.png) no-repeat left center;
+.car-code-field {
+	background-image: url(pictures_of_transportation/car.png);
 }
 input::-webkit-input-placeholder {
-	color: #B8B9BB; 
-	padding-left: 20px;
+	color: #B8B9BB;
 }
 input::-moz-placeholder {
 	color: #B8B9BB; 
 }
-.show-submit-site {
+.submit-order {
 	margin: 40px auto 0 auto;
 	text-align: center;
 	background: #9cd70d;
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size: 18px;
-	padding: 22px 38px;
+	padding: 18px 38px;
 	box-shadow: 0 0 11px rgba(0,0,0,.3);
 	border: 0;
 	display: block;
+	border-top: 4px solid #9cd70d;
+	border-bottom: 4px solid #9cd70d;
+	cursor: pointer;
+}
+
+.submit-order:hover {
+	border-bottom-color: #3a8fc8;
 }
 
 /***************************** footer */
@@ -897,7 +912,8 @@ input::-moz-placeholder {
 }
 .footer .phones{
 	font-size: 30px;
-	width: 195px;
+	width: 215px;
+	text-align: center;
 	margin: 0 auto;
 	line-height: 38px;
 }
@@ -930,11 +946,12 @@ input::-moz-placeholder {
 .copyright .instagram {
 	text-decoration: none;
 	float: left;
-	margin: 10px 40px 0 0;
+	margin: 10px 20px 0 20px;
 	line-height: 15px;
 	background: #3a8fc8;
 	position: relative;
 	padding: 32px 32px 0 0;
+	border: 4px solid #3a8fc8;
 }
 .copyright .vk:after {
 	position: absolute;
@@ -1052,11 +1069,9 @@ input::-moz-placeholder {
 	.main {
 		margin-bottom: 40px;
 	}
-	.advantages .advantages-item:first-child/*???????*/ {
-		margin: 0 0 40px 15%;
-	}
-	.advantages-item /*?????????*/{
-		margin: 0 2% 40px 9%;
+	.advantages{
+		max-width: 664px;
+		margin: 0 auto;
 	}
 	.informations-item {
 		margin: 0 20px;
@@ -1094,7 +1109,7 @@ input::-moz-placeholder {
 
 	.thin-header .marker .title {
 		font-size: 20px;
-		padding-left: 65px;
+		padding-left: 77px;
 		width: 75px;
 	}
 	.thin-header .marker .phones {
@@ -1141,6 +1156,15 @@ input::-moz-placeholder {
 	#sales .sale {
 		font-size: 17px;
 	}
+
+	.advantages {
+		max-width: 310px;
+		margin: 0 auto;
+	}
+	.advantages-item {
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.services-item {
  		margin: 0 7% 35px 7%;
  	}
@@ -1161,16 +1185,21 @@ input::-moz-placeholder {
 		font-size: 24px;
 		line-height: 35px;
 	}
+	.network {
+		margin: 0 auto;
+		width: 180px;
+	}
 	.network .vk,
 	.network .facebook,
 	.network .instagram {
 		text-decoration: none;
 		float: left;
-		margin: 10px 20px 0 5px;
+		margin: 20px 10px 0 10px;
 		line-height: 15px;
 		background: #3a8fc8;
 		position: relative;
 		padding: 32px 32px 0 0;
+		border: 4px solid #3a8fc8;
 	}
 	.network .vk:after {
 		position: absolute;
@@ -1271,10 +1300,10 @@ input::-moz-placeholder {
 	.informations-item h3 {
 		width: auto;
 	}
-	.ordering-item {
+	.order-form-item {
 		width: 380px;
 	}
-	.show-text, .show-tel {
+	.text-field, .tel-field {
 		width: 86%;
 	}
 	.copyright {

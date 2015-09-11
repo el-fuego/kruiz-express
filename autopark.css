@@ -361,25 +361,27 @@ h2 {
 	box-sizing: border-box;
 	color: #ffffff;
 	line-height: 60px;
-	padding: 0 75px;
+	padding: 0 68px;
 	width: 270px;
 	text-align: center;
 	margin: 19px auto 0 auto;
+	border-top: 4px solid #9cd70d;
+	border-bottom: 4px solid #9cd70d;
 }
 
-/***************************** ordering */
-
-.ordering {
-	margin: 50px auto 0 auto;
-	padding: 20px;
+.order:hover {
+	border-bottom-color: #fff;
 }
-.ordering-item {
-	margin: 0 auto;
+
+/***************************** order-form */
+
+.order-form {
+	margin: 150px auto 0 auto;
 	width: 400px;
 	box-sizing: border-box;
 	background: transparent;
 }
-.ordering-item .title {
+.order-form .title {
 	margin: 0;
 	padding: 0 0 32px;
 	text-align: center;
@@ -392,73 +394,68 @@ h2 {
 	margin: 0;
 	background: url(pictures_of_transportation/vitoout.jpg) no-repeat;
 }
-.ordering-item form {
+.order-form form {
 	background: #ffffff;
-	padding: 20px;
+	padding: 20px 20px 40px 20px;
 }
-.show-text,
-.show-tel,
-.show-email,
-.show-aticle {
+.text-field,
+.tel-field,
+.email-field,
+.car-code-field {
 	width: 310px;
 	height: 45px;
-	background: #ffffff;
+	background: #ffffff no-repeat left center;
 	margin: 20px 10px 0 35px;
-	padding: 5px 10px;
+	padding: 5px 32px;
 	border: 0 solid #ffffff;
 	border-bottom: 2px solid #f1f1f1;
-	color: #B8B9BB;/********************/
+	color: #333;
 	box-sizing: border-box;
 	font-size: 16px;
 }
-.show-text,
-.show-tel {
-	background: url(pictures_of_transportation/impotent.png) no-repeat right center;
-}
-.show-text:focus,
-.show-tel:focus,
-.show-email:focus,
-.show-aticle:focus {
+.text-field:focus,
+.tel-field:focus,
+.email-field:focus,
+.car-code-field:focus {
 	outline: 0;
 }
-.show-text {
-	background-image: url(pictures_of_transportation/man.png), 
-	url(pictures_of_transportation/impotent.png);
-	background-repeat: no-repeat;
-	background-position: left center, right center;
+.text-field {
+	background-image: url(pictures_of_transportation/man.png);
 }
-.show-tel {
-	background: url(pictures_of_transportation/phone.png), 
-	url(pictures_of_transportation/impotent.png);
-	background-repeat: no-repeat;
-	background-position: left center, right center;
+.tel-field {
+	background-image: url(pictures_of_transportation/phone.png);
 }
-.show-email {
-	background: url(pictures_of_transportation/mail.png) no-repeat left center;
+.email-field {
+	background-image: url(pictures_of_transportation/mail.png);
 }
-.show-aticle {
-	background: url(pictures_of_transportation/car.png) no-repeat left center;
+.car-code-field {
+	background-image: url(pictures_of_transportation/car.png);
 }
 input::-webkit-input-placeholder {
-	color: #B8B9BB; 
-	padding-left: 20px;
+	color: #B8B9BB;
 }
 input::-moz-placeholder {
 	color: #B8B9BB; 
 }
-.show-submit-site {
+.submit-order {
 	margin: 40px auto 0 auto;
 	text-align: center;
 	background: #9cd70d;
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size: 18px;
-	padding: 22px 38px;
+	padding: 18px 38px;
 	box-shadow: 0 0 11px rgba(0,0,0,.3);
 	border: 0;
 	display: block;
+	border-top: 4px solid #9cd70d;
+	border-bottom: 4px solid #9cd70d;
+	cursor: pointer;
 }
 
+.submit-order:hover {
+	border-bottom-color: #3a8fc8;
+}
 /***************************** footer */
 
 .footer{
@@ -480,7 +477,8 @@ input::-moz-placeholder {
 }
 .footer .phones{
 	font-size: 30px;
-	width: 195px;
+	width: 215px;
+	text-align: center;
 	margin: 0 auto;
 	line-height: 38px;
 }

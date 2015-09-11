@@ -105,7 +105,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">кондиціонер</p>
                     <p class="table">складається стіл в салоні</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(0035);">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -133,7 +133,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">кондиціонер</p>
                     <p class="table">складається стіл в салоні</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(0085);">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -161,7 +161,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">-</p>
                     <p class="table">складається стіл в салоні</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0032');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -189,7 +189,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">клімат контроль</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(0003);">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -217,7 +217,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">відкриваючийся люк</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(0030);">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -245,7 +245,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">кондиціонер</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(00093);">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -273,7 +273,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">відкриваючийся люк</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(0074);">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -301,7 +301,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">відкриваючийся люк</p>
                     <p class="air">клімат контроль</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0032');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -329,7 +329,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">клімат контроль</p>
                     <p class="air">підігрів сидінь</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(0055);">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -357,23 +357,21 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">клімат контроль</p>
                     <p class="air">підігрів сидінь</p>
-                    <a class="order" href="#bottom">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode(0011);">Замовити</a>
 				</div>
 			</div>
 		</div>
-		<div class="ordering">
-			<div class="ordering-item">
-				<p class="title"><a name="bottom"></a>Замовити автомобіль</p>
-				<div class="picture"></div>
-				<form>
-					<input class="show-text" type="text" placeholder="Ваше ім'я" autocomplete="on" required spellcheck="true">
-					<input class="show-tel" type="tel"  placeholder="Ваш телефон" maxlength="13" required>
-					<input class="show-email" type="email" placeholder="Ваша почта">
-					<input class="show-aticle" type="text"
-					placeholder="Артикул машини" maxlength="4">		
-					<input class="show-submit-site" type="submit" value="Відправити заявку!">
-				</form>
-			</div>
+		<div class="order-form">
+			<p class="title"><a name="bottom"></a>Замовлення автомобіля</p>
+			<div class="picture"></div>
+			<form>
+				<input class="text-field" type="text" placeholder="Ваше ім’я *" autocomplete="on" required spellcheck="true">
+				<input class="tel-field" type="tel"  placeholder="Номер телефону *" maxlength="13" required>
+				<input class="email-field" type="email" placeholder="Адреса ел. пошти">
+				<input class="car-code-field" type="text"
+					   placeholder="Артикул машини" maxlength="4">
+				<input class="submit-order" type="submit" value="Відправити заявку!">
+			</form>
 		</div>
 		<div class="footer"> 
             <div class="copyright">
