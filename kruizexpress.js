@@ -88,7 +88,3 @@ window.onscroll = function () {
 }
 document.body.onscroll();
 
-
-function setCarCode (code) {
-	document.getElementById('car-code').value = code;
-}

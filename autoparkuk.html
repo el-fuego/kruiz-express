@@ -105,7 +105,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">кондиціонер</p>
                     <p class="table">складається стіл в салоні</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(0035);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0035');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -133,7 +133,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">кондиціонер</p>
                     <p class="table">складається стіл в салоні</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(0085);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0085');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -189,7 +189,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">клімат контроль</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(0003);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0003');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -217,7 +217,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">відкриваючийся люк</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(0030);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0030');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -245,7 +245,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">кондиціонер</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(00093);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('00093');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -273,7 +273,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">відкриваючийся люк</p>
                     <p class="microphone">мікрофон для екскурсій</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(0074);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0074');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -329,7 +329,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">клімат контроль</p>
                     <p class="air">підігрів сидінь</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(0055);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0055');">Замовити</a>
 				</div>
 			</div>
 			<div class="car">
@@ -357,7 +357,7 @@
                     <p class="bag">багажний відсік</p>
                     <p class="conditioner">клімат контроль</p>
                     <p class="air">підігрів сидінь</p>
-                    <a class="order" href="#bottom" onclick="setCarCode(0011);">Замовити</a>
+                    <a class="order" href="#bottom" onclick="setCarCode('0011');">Замовити</a>
 				</div>
 			</div>
 		</div>
@@ -396,30 +396,8 @@
                 	<a class="instagram" href="#"></a>
 				</div>
             </div>
-        </div> 
-		
-		<script>
-var scrolledClass = 'thin-header';
-document.body.onscroll = function () {
-	if (+document.body.scrollTop > 80) {
-		if (document.body.className.indexOf(scrolledClass) < 0) {
-			document.body.className += ' ' + scrolledClass;
-		}
-	} else {
-		document.body.className = document.body.className.replace(new RegExp(' ?' + scrolledClass), '')
-	}
-}
-document.body.onscroll();
+        </div>
 
-
-$('.car-photo .main, .car-photo .inside, .car-photo .outside').click(function(event){
-	$('.car-photo .photo').hide();
-	$(event.target).find('.photo').show();
-	return false;
-});
-$(document).click(function(){
-	$('.car-photo .photo').hide();
-});
-		</script>
+		<script src="./autopark.js"></script>
 	</body>
 </html>
