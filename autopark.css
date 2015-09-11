@@ -15,8 +15,26 @@ body {
 
 /******************************** header */
 
-.fool-photo {
+#full-photo {
 	display: none;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 100;
+}
+#full-photo .image {
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	background: center center no-repeat;
+	background-size: contain;
+	cursor: pointer;
 }
 .head {
 	height: 50px;

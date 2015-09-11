@@ -12,13 +12,14 @@ window.onscroll = function () {
 document.body.onscroll();
 
 
-$('.car-photo .main, .car-photo .inside, .car-photo .outside').click(function(event){
-	$('.car-photo .photo').hide();
-	$(event.target).find('.photo').show();
+$('.car-photo .main img, .car-photo .inside img, .car-photo .outside img').click(function (event) {
+	var url = $(event.target).attr('full-url');
+
+	$('#full-photo').show().find('.image').css('background-image', 'url("' + url + '")');
 	return false;
 });
 $(document).click(function(){
-	$('.car-photo .photo').hide();
+	$('#full-photo').hide();
 });
 
 
